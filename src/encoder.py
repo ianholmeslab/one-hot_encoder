@@ -192,6 +192,10 @@ class Encoder:
         
         self.overlap_detector(['test_reads.bam', 'test_reads.bam'])
         self.transitioner()
+    
+    @staticmethod
+    def pytest_test_method():
+        return True
 
 def main():
     """Access class and call driver member function to begin programatic cascade."""
